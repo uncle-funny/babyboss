@@ -1,0 +1,328 @@
+html{
+    --main-color:#bfbfff;
+    scroll-behavior: smooth;    
+}
+
+img{
+    max-width: 100%;
+}
+
+a,li{
+    display: block;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;     
+}
+
+section{
+    padding: 100px 0;
+}
+/*******************   HEADER  *****************/
+
+.main{
+    position: relative;        
+    text-align: center;
+    
+}
+
+.main::after{
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(https://sportyfi.ru/files/image/velosiped/kak-vibrat-detskiy-velosiped/shutterstock_107757644.jpg); 
+    background-position: top right;
+    background-size: cover;    
+    width: 100%;
+    height: 100%;
+    opacity : 0.3;
+    z-index: -1;
+}
+
+.header .col-lg-4{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.mainlogo{
+    width: 100px;
+    padding: 10px 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.mainlogo:hover{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.nav-menu{
+    line-height: 30px;
+    margin-bottom: 0;
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+}
+.nav-menu li + li{
+    padding-left: 15px;
+}
+.nav-menu li a {
+    color: #3d7c02;
+    font-weight: bold;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    text-shadow: 0px 0px 10px black;
+}
+.nav-menu li a:hover{
+    color: #8be675;
+    text-shadow: 0px 0px 20px black;
+    border-bottom: 2px solid black;
+}
+
+.social{
+    display: -webkit-box;
+    display: flex;
+    font-size: 1.3rem;
+    padding-left: 30px;
+}
+.social i{
+    color: #a5929b;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;   
+    padding: 5px;
+    border: 1px solid transparent;
+}
+.social i:hover{
+    border: 1px solid rgba(105, 105, 105, 0.548);
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+}
+
+.social > a + a{
+    margin-left: 15px;
+}
+
+.title-site{
+    margin: 0;
+    color: #4e050b;
+    font-weight: 900;
+    font-size: 4rem;
+    letter-spacing: -1px;
+    word-spacing: 30px;
+    position: relative;
+    text-shadow:    0px 3px 0px #b2a98f,
+                    0px 14px 10px rgba(0,0,0,0.15),
+                    0px 24px 2px rgba(0,0,0,0.1),
+                    0px 34px 30px rgba(0,0,0,0.1);
+}
+
+.title-choice{
+    padding: 50px 0 ;
+    color: #b8fcfe;
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 0px 3px 5px black;
+}
+
+.img-choice{
+    padding-top: 20px;
+}
+
+.choice{
+    opacity: 0.9;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 5px ;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin-bottom: 100px;;
+}
+
+.choice.girl{color: #000;text-shadow: -1px 5px 10px #e100ff;}
+.choice.boy{color: #000;text-shadow: 1px 5px 10px #2a1bfd;}
+
+.choice img{
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.choice span{
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;    
+    height: 50px;
+    line-height: 50px;
+}
+.choice.boy span{
+    background: rgba(68, 17, 207, 0.3);
+}
+.choice.girl span{
+    background: rgba(207, 17, 26, 0.3);
+}
+   
+.choice:hover{
+    /* transform: scale(1.01); */
+    box-shadow: 0px 0px 50px 3px black;
+    opacity: 1;
+}
+
+
+.gotop{
+    color: #131a35;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    position: fixed;
+    bottom: 45px;
+    right: -30px;
+    font-size: 1.5rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    padding: 1px 10px;
+    border: 1px solid transparent;
+    z-index: 222;
+}
+
+.gotop:hover{
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: rgba(230,110,200,0.5);
+}
+
+/*******************   Offers  *****************/
+
+.offers{
+    background-color: #d1f3ef;
+    
+}
+
+.titles{
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    text-shadow: 0px 0px 10px black;
+}
+
+.titles::after{
+    content: "";
+    display: block;
+    width: 250px;
+    border-bottom: 3px solid #8f0000;
+    padding-top: 10px;
+    margin: auto;
+}
+
+.offers-text{
+    font-size: 1.5rem;
+    padding: 50px 0;
+}
+
+.span-bg{
+    background-color: rgba(131, 133, 245, 0.5)
+}
+
+
+
+/*******************   Ship  *****************/
+
+
+.ship{
+    background-color: #ffe8f8;
+}
+
+.ship .offers-text p{
+    padding-bottom: 20px;
+}
+
+
+/*******************   Contacts  *****************/
+
+
+.contacts{
+    padding: 100px 0 0 0;
+    font-weight: bold;
+    position: relative;
+}
+.contacts h2.titles{
+    font-weight: bold;
+}
+.contacts::after{
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url(https://img3.goodfon.ru/wallpaper/nbig/5/87/anime-fon-tekstura-art-detskaya.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.phones{
+    text-align: center;
+    font-size: 2.35rem;;
+}
+
+.phones a:nth-child(1)::after{
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 3px solid #000;
+    margin: auto;
+}
+
+.phones a:nth-child(2)::after{
+    content: "";
+    display: block;
+    width: 250px;
+    border-bottom: 3px solid #000;
+    margin: auto;
+}
+
+/*******************   Footer  *****************/
+
+.footer{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    min-height: 70px;
+    background-color:rgba(0, 00, 0, 0.5);
+    margin-top: 100px;;
+}
+
+.footer .social{
+    font-size: 2.5rem;
+}
+.footer .social i{
+    border: none;
+    color: #efeded;
+}
+.footer .social i:hover{
+    color: #000;
+    border: none;
+    box-shadow: none;
+  }

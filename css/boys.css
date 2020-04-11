@@ -1,0 +1,53 @@
+section{
+    padding: 50px 0;
+}
+
+
+.menu{
+    background: #000;
+}
+
+.titles{   
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.titles::after{
+    width: 100px;
+    border-bottom: 3px solid #f4f800;
+}
+
+.carts{
+    padding: 40px 15px;
+    margin: 50px 0;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0px 0px 10px -3px black;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.carts:hover{
+    box-shadow: 0px 0px 10px 1px black;
+}
+.carts:hover .carts-price{
+    color: black;
+    border-radius: 20px;
+    border: 2px solid grey;
+}
+
+.carts-img{
+    border-radius: 15px;
+}
+
+.carts-text{
+    margin: 20px 0;
+}
+
+.carts-price{
+    color: teal;
+    display: inline-block;
+    padding: 5px 30px;
+    border: 2px solid transparent;
+    transition: 1s;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
